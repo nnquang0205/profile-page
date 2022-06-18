@@ -1,0 +1,112 @@
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+/* <-----START: CONTROL RIGHT SIDE-----> */
+.container-right{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    background-color: rgb(130, 164, 130);
+    position: fixed;
+    right: 0px;
+    top: 0px;
+
+
+}
+.profile-image {
+
+    top: 80%;
+    margin: 30% 30% 30% 30%;
+}
+.container-right a img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 20%;
+}
+.profile-image img {
+    z-index: -1;
+    width: 100%;
+}
+/* <-----END: CONTROL RIGHT SIDE-----> */
+
+/* <-----START: CONTROL LEFT SIDE-----> */
+.container-left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    position: static;
+    left: 0px;
+
+}
+nav {
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50%;
+}
+nav a {
+    text-decoration: none;
+    width: 25%;
+    text-align: center;
+    padding: 2%;
+    color: black;
+}
+nav a:hover{
+    color: green;
+
+}
+.container-left-main {
+    text-align: left;
+}
+h1 {
+    padding-top: 6%;
+    margin: 8% 2% 2% 2%;
+    font-size: 1000%;
+    border: solid 1px rgb(130, 164, 130);
+}
+.container-left-main p {
+    margin-left: 75%;
+}
+.container-left-block {
+    padding: 30% 15% 30% 15%;
+    border-top: solid 1px rgb(130, 164, 130);
+    border-left: solid 1px rgb(130, 164, 130);
+}
+.container-left-block li {
+    margin: 5%;
+    font-size: 30px;
+}
+.container-left-block h2 {
+    font-size: 50px;
+}
+.container-left-block h3 {
+    font-size: 50px;
+}
+.container-left-block p {
+    font-size: 30px;
+}
+.container-left-block-child {
+    border: solid 1px silver;
+}
+.container-left-block-child p {
+    font-size: 40px;
+}
+.container-left-block-child h4 {
+    font-size: 40px;
+}
+footer {
+    text-align: center;
+    border-top: solid 1px rgb(130, 164, 130);
+}
+/* <-----END: CONTROL LEFT SIDE-----> */
